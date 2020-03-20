@@ -349,7 +349,7 @@ plot_ratio_distribution <- function(selected, dist_corr){
     colnames(ratio_matrix) <- paste("Ratio_", selected,"/",control_group, sep="")
   }
   
-  ratio_matrix <- log2(ratio_matrix)
+  #ratio_matrix <- log2(ratio_matrix)
   
   if(!is.null(dist_corr)){
     if(dist_corr == "Correction"){
